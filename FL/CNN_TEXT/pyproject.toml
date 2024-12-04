@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "pytorch"
+name = "CNN_Model"
 version = "1.0.0"
 description = ""
 license = "Apache-2.0"
@@ -18,7 +18,7 @@ dependencies = [
 packages = ["."]
  
 [tool.flwr.app]
-publisher = "pytorch"
+publisher = "CNN_Model"
 
 [tool.flwr.app.components]
 serverapp = "pytorch.server_app:app"
