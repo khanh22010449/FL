@@ -8,13 +8,13 @@ from typing import List, Tuple
 from CNN_Model.task import CNN, get_weights
 
 
-def weighted_average(metrics: List[Tuple[int, Metrics]]) -> Metrics:
-    # Multiply accuracy of each client by number of examples used
-    accuracies = [num_examples * m["accuracy"] for num_examples, m in metrics]
-    examples = [num_examples for num_examples, _ in metrics]
+# def weighted_average(metrics: List[Tuple[int, Metrics]]) -> Metrics:
+#     # Multiply accuracy of each client by number of examples used
+#     accuracies = [num_examples * m["accuracy"] for num_examples, m in metrics]
+#     examples = [num_examples for num_examples, _ in metrics]
 
-    # Aggregate and return custom metric (weighted average)
-    return {"accuracy": sum(accuracies) / sum(examples)}
+#     # Aggregate and return custom metric (weighted average)
+#     return {"accuracy": sum(accuracies) / sum(examples)}
 
 
 def server_fn(context: Context):
@@ -32,7 +32,7 @@ def server_fn(context: Context):
         fraction_evaluate=1.0,
         min_available_clients=2,
         initial_parameters=parameters,
-        evaluate_metrics_aggregation_fn=weighted_average,
+        # evaluate_metrics_aggregation_fn=weighted_average,
     )
 
     config = ServerConfig(num_rounds=num_rounds)

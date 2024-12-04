@@ -14,20 +14,23 @@ from CNN_Model.task import (
 )
 
 
-# Define Flower Client and client_fn
+# Define Flower Client
 class FlowerClient(NumPyClient):
     def __init__(self, model, X_train, y_train, X_test, y_test, local_epochs):
         self.model = model
         self.X_train = X_train
-        self.X_test = X_test
         self.y_train = y_train
+        self.X_test = X_test
         self.y_test = y_test
         self.local_epochs = local_epochs
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.net.to(self.device)
+        self.model.to(self.device)
 
     def fit(self, parameters, config):
+        # Set model weights
         set_weights(self.model, parameters)
+
+        # Train model locally
         train_loss = train(
             self.model,
             self.X_train,
@@ -35,6 +38,8 @@ class FlowerClient(NumPyClient):
             self.local_epochs,
             self.device,
         )
+
+        # Return updated weights, number of samples, and training loss
         return (
             get_weights(self.model),
             len(self.X_train),
@@ -42,25 +47,27 @@ class FlowerClient(NumPyClient):
         )
 
     def evaluate(self, parameters, config):
+        # Set model weights
         set_weights(self.model, parameters)
-        loss, accuracy = test(self.model, self.X_test, self.y_test, self.device)
-        return loss, len(self.X_test), {"accuracy": accuracy}
+
+        # Evaluate model on local test data
+        loss = test(self.model, self.X_test, self.y_test, self.device)
+
+        # Return loss, number of test samples, and an empty dictionary (no accuracy for regression)
+        return loss, len(self.X_test), {}
 
 
 def client_fn(context: Context):
     # Load model and data
     model = CNN()
-
     X_train, y_train, X_test, y_test = load_data()
+
+    # Get local epochs from context
     local_epochs = context.run_config["local-epochs"]
 
-    # Return Client instance
-    return FlowerClient(
-        model, X_train, y_train, X_test, y_test, local_epochs
-    ).to_client()
+    # Return the FlowerClient instance
+    return FlowerClient(model, X_train, y_train, X_test, y_test, local_epochs)
 
 
 # Flower ClientApp
-app = ClientApp(
-    client_fn,
-)
+app = ClientApp(client_fn)

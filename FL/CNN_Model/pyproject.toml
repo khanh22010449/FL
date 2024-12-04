@@ -12,7 +12,7 @@ dependencies = [
     "flwr-datasets[vision]>=0.3.0",
     "torch==2.2.1",
     "torchvision==0.17.1",
-    "scikit-learn=1.3.2",
+    "scikit-learn>=1.3.2",  # Changed '=' to '>='
 ]
 
 [tool.hatch.build.targets.wheel]
@@ -22,13 +22,13 @@ packages = ["."]
 publisher = "CNN_Model"
 
 [tool.flwr.app.components]
-serverapp = "CNN_Model.server_app:app"
-clientapp = "CNN_Model.client_app:app"
+serverapp = "CNN_Model.server:app"
+clientapp = "CNN_Model.client:app"
 
 [tool.flwr.app.config]
 num-server-rounds = 5
 fraction-fit = 0.5
-local-epochs = 10
+local-epochs = 100
 
 [tool.flwr.federations]
 default = "local-simulation"
