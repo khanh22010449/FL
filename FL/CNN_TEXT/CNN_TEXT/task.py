@@ -2,13 +2,12 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import DataLoader
 from flwr_datasets import FederatedDataset
 from flwr_datasets.partitioner import IidPartitioner
 
 import numpy as np
 from collections import Counter
-from sklearn.preprocessing import LabelEncoder
 from flwr.common.logger import log
 from logging import INFO
 
@@ -38,6 +37,9 @@ def load_data(partition_id: int, num_partitions: int, vocab_size: int, max_lengt
         for i, (word, _) in enumerate(word_counts.most_common(vocab_size - 1))
     }
     vocab["<PAD>"] = 0  # Padding token
+
+    while len(vocab) < 68000:
+        vocab[f"<PAD_{len(vocab)}>"] = 0
 
     def tokenize_and_pad(batch):
         sequences = [
@@ -77,7 +79,10 @@ def load_data(partition_id: int, num_partitions: int, vocab_size: int, max_lengt
     trainloader = DataLoader(
         partition_train_test["train"], batch_size=32, shuffle=True, num_workers=4
     )
+    for batch in trainloader:
+        log(INFO, f"KEYS : {batch.keys()}")
     valloader = DataLoader(partition_train_test["test"], batch_size=32, num_workers=4)
+    # print(f"len vocab : {len(vocab)}")
     return trainloader, valloader, len(vocab)
 
 
@@ -123,23 +128,29 @@ def train(net, trainloader, epochs: int, device):
 
         avg_loss = total_loss / len(trainloader)
         print(f"Epoch {epoch + 1}/{epochs}, Loss: {avg_loss:.4f}")
+        return avg_loss
 
 
 def validate(net, valloader, device):
     net.eval()
     correct = 0
     total = 0
+    total_loss = 0
+    criterion = nn.BCEWithLogitsLoss()
     with torch.no_grad():
         for batch in valloader:
             inputs = batch["padded"].to(device)
             labels = batch["label"].to(device).unsqueeze(1)
             outputs = net(inputs)
+            loss = criterion(outputs, labels)
+            total_loss += loss.item()
             predicted = (torch.sigmoid(outputs) > 0.5).float()
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
     accuracy = correct / total
+    avg_loss = total_loss / len(valloader)  # Tính toán loss trung bình
     print(f"Validation Accuracy: {accuracy:.4f}")
-    net.train()
+    return avg_loss, accuracy  # Trả về loss và accuracy
 
 
 def get_weights(model):
