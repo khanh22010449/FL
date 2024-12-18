@@ -13,6 +13,10 @@ from logging import INFO
 
 import warnings
 from collections import OrderedDict
+import json
+from datetime import datetime
+from pathlib import Path
+from flwr.common.typing import UserConfig
 
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -79,8 +83,11 @@ def load_data(partition_id: int, num_partitions: int, vocab_size: int, max_lengt
     trainloader = DataLoader(
         partition_train_test["train"], batch_size=32, shuffle=True, num_workers=4
     )
-    for batch in trainloader:
-        log(INFO, f"KEYS : {batch.keys()}")
+    # for batch in trainloader:
+    #     log(INFO, f"KEYS : {batch.keys()}")
+    log(INFO, f"task.py")
+    log(INFO, f"len vocab {len(vocab)}")
+
     valloader = DataLoader(partition_train_test["test"], batch_size=32, num_workers=4)
     # print(f"len vocab : {len(vocab)}")
     return trainloader, valloader, len(vocab)
@@ -111,9 +118,9 @@ def train(net, trainloader, epochs: int, device):
     criterion = nn.BCEWithLogitsLoss()  # More stable for binary classification
     optimizer = optim.AdamW(net.parameters(), lr=5e-5)
     net.train()
-
+    total_loss = 0.0
     for epoch in range(epochs):
-        total_loss = 0.0
+
         for batch in trainloader:
             optimizer.zero_grad()
             inputs = batch["padded"].to(device)
@@ -126,12 +133,12 @@ def train(net, trainloader, epochs: int, device):
 
             total_loss += loss.item()
 
-        avg_loss = total_loss / len(trainloader)
-        print(f"Epoch {epoch + 1}/{epochs}, Loss: {avg_loss:.4f}")
-        return avg_loss
+    avg_loss = total_loss / len(trainloader)
+    print(f"Epoch {epoch + 1}/{epochs}, Loss: {avg_loss:.4f}")
+    return avg_loss
 
 
-def validate(net, valloader, device):
+def test(net, valloader, device):
     net.eval()
     correct = 0
     total = 0
@@ -163,6 +170,22 @@ def set_weights(model, parameters):
     model.load_state_dict(state_dict, strict=True)
 
 
+def create_run_dir(config: UserConfig) -> Path:
+    """Create a directory where to save results from this run."""
+    # Create output directory given current timestamp
+    current_time = datetime.now()
+    run_dir = current_time.strftime("%Y-%m-%d/%H-%M-%S")
+    # Save path is based on the current directory
+    save_path = Path.cwd() / f"outputs/{run_dir}"
+    save_path.mkdir(parents=True, exist_ok=False)
+
+    # Save run config as json
+    with open(f"{save_path}/run_config.json", "w", encoding="utf-8") as fp:
+        json.dump(config, fp)
+
+    return save_path, run_dir
+
+
 if __name__ == "__main__":
     for i in range(10):
         trainloader, valloader, len_vocab = load_data(i, 10, 100000, 512)
@@ -177,4 +200,4 @@ if __name__ == "__main__":
         )
         net.to(device)  # Move the model to the desired device
         train(net, trainloader, 10, device)
-        validate(net, valloader, device)
+        test(net, valloader, device)
