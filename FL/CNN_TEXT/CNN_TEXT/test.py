@@ -2,42 +2,36 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-from torch.utils.data import DataLoader, Dataset
-from flwr_datasets import FederatedDataset
-from flwr_datasets.partitioner import IidPartitioner
+from torch.utils.data import DataLoader
 
 import numpy as np
 from collections import Counter
-from sklearn.preprocessing import LabelEncoder
+from datasets import load_dataset
 from flwr.common.logger import log
 from logging import INFO
 
 import warnings
 from collections import OrderedDict
+from collections import defaultdict
 
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-fds = None
 
+def load_data(vocab_size: int, max_length: int):
 
-def load_data(partition_id: int, num_partitions: int, vocab_size: int, max_length: int):
-    global fds
-
-    if fds is None:
-        partitioner = IidPartitioner(num_partitions=num_partitions)
-        fds = FederatedDataset(
-            dataset="stanfordnlp/imdb", partitioners={"train": partitioner}
-        )
-    partition = fds.load_partition(partition_id=partition_id)
+    data = load_dataset("stanfordnlp/imdb")["train"]
 
     # Build vocabulary based on the entire partition
-    word_counts = Counter(word for text in partition["text"] for word in text.split())
+    word_counts = Counter(word for text in data["text"] for word in text.split())
     vocab = {
         word: i + 1
         for i, (word, _) in enumerate(word_counts.most_common(vocab_size - 1))
     }
     vocab["<PAD>"] = 0  # Padding token
+
+    while len(vocab) < 68000:
+        vocab[f"<PAD_{len(vocab)}>"] = 0
 
     def tokenize_and_pad(batch):
         sequences = [
@@ -56,8 +50,8 @@ def load_data(partition_id: int, num_partitions: int, vocab_size: int, max_lengt
         return batch
 
     # Apply tokenization and padding
-    partition = partition.map(tokenize_and_pad, batched=True)
-    partition = partition.remove_columns("text")
+    data = data.map(tokenize_and_pad, batched=True)
+    data = data.remove_columns("text")
 
     # Convert 'padded' and 'label' to tensors
     def apply_tensor(batch):
@@ -67,105 +61,36 @@ def load_data(partition_id: int, num_partitions: int, vocab_size: int, max_lengt
         return batch
 
     # Apply tensor conversion
-    partition_train_test = partition.train_test_split(test_size=0.2, seed=42)
-    partition_train_test = partition_train_test.with_transform(apply_tensor)
+    train_test = data.train_test_split(test_size=0.2, seed=42)
+    train_test = train_test.with_transform(apply_tensor)
 
     # Verify the type
     # print(f"train_test : {type(partition_train_test['train']['padded'])}")
-    # print(f"len vocab : {len(vocab)}")
 
     # Create DataLoader
-    trainloader = DataLoader(
-        partition_train_test["train"], batch_size=32, shuffle=True, num_workers=8
-    )
-    valloader = DataLoader(partition_train_test["test"], batch_size=32, num_workers=8)
-    return trainloader, valloader, len(vocab)
+    # log(INFO, f"test.py")
+    # log(INFO, f"len vocab {len(vocab)}")
 
-
-class TextCNN(nn.Module):
-    def __init__(self, vocab_size, embedding_dim, num_filters, kernel_size, max_length):
-        super(TextCNN, self).__init__()
-        self.embedding = nn.Embedding(vocab_size, embedding_dim)
-        self.conv = nn.Conv1d(
-            in_channels=embedding_dim, out_channels=num_filters, kernel_size=kernel_size
-        )
-        self.pool = nn.MaxPool1d(kernel_size=max_length - kernel_size + 1)
-        self.fc = nn.Linear(num_filters, 1)
-        # Removed sigmoid for BCEWithLogitsLoss
-
-    def forward(self, x):
-        x = self.embedding(x)  # Shape: (batch_size, max_length, embedding_dim)
-        x = x.permute(0, 2, 1)  # (batch_size, embedding_dim, max_length)
-        x = self.conv(x)  # (batch_size, num_filters, L_out)
-        x = self.pool(x)  # (batch_size, num_filters, 1)
-        x = x.squeeze(2)  # (batch_size, num_filters)
-        x = self.fc(x)  # (batch_size, 1)
-        return x  # No sigmoid
-
-
-def train(net, trainloader, epochs: int, device):
-    criterion = nn.BCEWithLogitsLoss()  # More stable for binary classification
-    optimizer = optim.Adam(net.parameters(), lr=5e-5)
-    net.train()
-
-    for epoch in range(epochs):
-        total_loss = 0.0
-        for batch in trainloader:
-            optimizer.zero_grad()
-            inputs = batch["padded"].to(device)
-            labels = batch["label"].to(device).unsqueeze(1)  # Shape: (batch_size, 1)
-
-            outputs = net(inputs)
-            loss = criterion(outputs, labels)
-            loss.backward()
-            optimizer.step()
-
-            total_loss += loss.item()
-
-        avg_loss = total_loss / len(trainloader)
-        # print(f"Epoch {epoch + 1}/{epochs}, Loss: {avg_loss:.4f}")
-        # return avg_loss
-
-
-def validate(net, valloader, device):
-    net.eval()
-    correct = 0
-    total = 0
-    with torch.no_grad():
-        for batch in valloader:
-            inputs = batch["padded"].to(device)
-            labels = batch["label"].to(device).unsqueeze(1)
-            outputs = net(inputs)
-            predicted = (torch.sigmoid(outputs) > 0.5).float()
-            total += labels.size(0)
-            correct += (predicted == labels).sum().item()
-    accuracy = correct / total
-    # print(f"Validation Accuracy: {accuracy:.4f}")
-
-
-def get_weights(model):
-    return [val.cpu().numpy() for _, val in model.state_dict().items()]
-
-
-def set_weights(model, parameters):
-    params_dict = zip(model.state_dict().keys(), parameters)
-    state_dict = OrderedDict({k: torch.tensor(v) for k, v in params_dict})
-    model.load_state_dict(state_dict, strict=True)
+    valloader = DataLoader(train_test["test"], batch_size=32, num_workers=8)
+    # for batch in valloader:
+    #     print(batch)
+    #     break
+    return valloader
 
 
 if __name__ == "__main__":
-    for i in range(10):
-        print(f"Client : {i}")
-        trainloader, valloader, len_vocab = load_data(i, 10, 100000, 512)
-        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-        print(f"Using device: {device}")
-        net = TextCNN(
-            vocab_size=len_vocab,
-            embedding_dim=256,
-            num_filters=128,
-            kernel_size=2,
-            max_length=512,
-        )
-        net.to(device)  # Move the model to the desired device
-        train(net, trainloader, 10, device)
-        validate(net, valloader, device)
+    # for i in range(10):
+    #     trainloader, valloader, len_vocab = load_data(i, 10, 100000, 512)
+    #     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    #     print(f"Using device: {device}")
+    #     net = TextCNN(
+    #         vocab_size=len_vocab,
+    #         embedding_dim=256,
+    #         num_filters=128,
+    #         kernel_size=2,
+    #         max_length=512,
+    #     )
+    #     net.to(device)  # Move the model to the desired device
+    #     train(net, trainloader, 10, device)
+    #     validate(net, valloader, device)
+    valloader = load_data(68000, 512)
