@@ -27,7 +27,7 @@ serverapp = "CNN_TEXT.server_app:app"
 clientapp = "CNN_TEXT.client_app:app"
 
 [tool.flwr.app.config]
-num-server-rounds =
+num-server-rounds = 50
 fraction-fit = 0.5
 local-epochs = 20
 server-device = "cpu"
