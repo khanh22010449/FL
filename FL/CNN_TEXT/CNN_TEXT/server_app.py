@@ -77,7 +77,7 @@ def server_fn(context: Context):
         run_config=context.run_config,
         use_wandb=context.run_config["use-wandb"],
         fraction_fit=fraction_fit,
-        fraction_evaluate=1.0,
+        fraction_evaluate=0.5,
         min_available_clients=2,
         initial_parameters=parameters,
         on_fit_config_fn=on_fit_config,

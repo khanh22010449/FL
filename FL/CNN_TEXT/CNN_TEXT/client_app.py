@@ -83,7 +83,7 @@ def client_fn(context: Context):
     num_partitions = context.node_config["num-partitions"]
 
     trainloader, valloader, len_vocab = load_data(
-        partition_id, num_partitions, 100000, 512
+        partition_id, num_partitions, 68000, 512
     )
     log(INFO, f"len vocab {len_vocab}")
 

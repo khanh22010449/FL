@@ -81,14 +81,14 @@ def load_data(partition_id: int, num_partitions: int, vocab_size: int, max_lengt
 
     # Create DataLoader
     trainloader = DataLoader(
-        partition_train_test["train"], batch_size=32, shuffle=True, num_workers=4
+        partition_train_test["train"], batch_size=32, shuffle=True, num_workers=8
     )
     # for batch in trainloader:
     #     log(INFO, f"KEYS : {batch.keys()}")
     log(INFO, f"task.py")
     log(INFO, f"len vocab {len(vocab)}")
 
-    valloader = DataLoader(partition_train_test["test"], batch_size=32, num_workers=4)
+    valloader = DataLoader(partition_train_test["test"], batch_size=32, num_workers=8)
     # print(f"len vocab : {len(vocab)}")
     return trainloader, valloader, len(vocab)
 
@@ -116,7 +116,7 @@ class TextCNN(nn.Module):
 
 def train(net, trainloader, epochs: int, device):
     criterion = nn.BCEWithLogitsLoss()  # More stable for binary classification
-    optimizer = optim.AdamW(net.parameters(), lr=5e-5)
+    optimizer = optim.Adam(net.parameters(), lr=5e-5)
     net.train()
     total_loss = 0.0
     for epoch in range(epochs):
@@ -188,7 +188,7 @@ def create_run_dir(config: UserConfig) -> Path:
 
 if __name__ == "__main__":
     for i in range(10):
-        trainloader, valloader, len_vocab = load_data(i, 10, 100000, 512)
+        trainloader, valloader, len_vocab = load_data(i, 10, 68000, 512)
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         print(f"Using device: {device}")
         net = TextCNN(
