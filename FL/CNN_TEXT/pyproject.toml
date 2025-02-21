@@ -29,7 +29,7 @@ clientapp = "CNN_TEXT.client_app:app"
 [tool.flwr.app.config]
 num-server-rounds = 50
 fraction-fit = 0.5
-local-epochs = 20
+local-epochs = 100
 server-device = "cpu"
 use-wandb = true
 
