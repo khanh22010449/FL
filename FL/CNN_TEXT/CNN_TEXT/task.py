@@ -79,7 +79,7 @@ def load_data(partition_id: int, num_partitions: int, vocab_size: int, max_lengt
     # Verify the type
     # print(f"train_test : {type(partition_train_test['train']['padded'])}")
 
-    # Create DataLoader
+    # Create DataLoaderArray
     trainloader = DataLoader(
         partition_train_test["train"], batch_size=32, shuffle=True, num_workers=8
     )

@@ -1,0 +1,39 @@
+/home/khanhsv/miniconda3/envs/FL/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+[92mINFO [39m:      Starting Flower ServerApp, config: num_rounds=50, no round_timeout
+[92mINFO [39m:
+[92mINFO [39m:      [INIT]
+[92mINFO [39m:      Using initial global parameters provided by strategy
+[92mINFO [39m:      Starting evaluation of initial global parameters
+/home/khanhsv/miniconda3/envs/FL/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=4083573) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+[92mINFO [39m:      💡 New best global model found: 0.498800
+[92mINFO [39m:      initial parameters (loss, other metrics): 0.751400487438129, {'centralized_accuracy': 0.4988}
+[92mINFO [39m:
+[92mINFO [39m:      [ROUND 1]
+[92mINFO [39m:      configure_fit: strategy sampled 10 clients (out of 20)
+Validation Accuracy: 0.4988, Loss: 0.7514
+[36m(ClientAppActor pid=4089749)[39m /home/khanhsv/miniconda3/envs/FL/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+[36m(ClientAppActor pid=4089749)[39m   obj.co_lnotab,  # for < python 3.10 [not counted in args]
+Map:   0%|          | 0/1250 [00:00<?, ? examples/s]
+Map: 100%|██████████| 1250/1250 [00:00<00:00, 6506.75 examples/s]
+[36m(ClientAppActor pid=4089749)[39m [92mINFO [39m:      Loaded data for partition 4, vocabulary size: 68000
+[36m(ClientAppActor pid=4089749)[39m [92mINFO [39m:      len vocab 68000
+Map: 100%|██████████| 1250/1250 [00:00<00:00, 14881.52 examples/s]
+[36m(ClientAppActor pid=4089749)[39m /home/khanhsv/miniconda3/envs/FL/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=4089749) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[36m(ClientAppActor pid=4089749)[39m   self.pid = os.fork()
+[36m(ClientAppActor pid=4089749)[39m Epoch 1/100, Loss: 0.7409
+[36m(ClientAppActor pid=4089749)[39m Epoch 2/100, Loss: 0.6951
+[36m(ClientAppActor pid=4089749)[39m Epoch 3/100, Loss: 0.6828
+[36m(ClientAppActor pid=4089749)[39m Epoch 4/100, Loss: 0.6792
+[36m(ClientAppActor pid=4089745)[39m Epoch 8/100, Loss: 0.6410[32m [repeated 24x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)
+[36m(ClientAppActor pid=4089748)[39m Epoch 14/100, Loss: 0.5963[32m [repeated 34x across cluster]
+[36m(ClientAppActor pid=4089740)[39m /home/khanhsv/miniconda3/envs/FL/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.[32m [repeated 3x across cluster]
+[36m(ClientAppActor pid=4089740)[39m   obj.co_lnotab,  # for < python 3.10 [not counted in args][32m [repeated 3x across cluster]
+Map:   0%|          | 0/1250 [00:00<?, ? examples/s][32m [repeated 3x across cluster]
+Map: 100%|██████████| 1250/1250 [00:00<00:00, 6556.09 examples/s]
+[36m(ClientAppActor pid=4089740)[39m [92mINFO [39m:      Loaded data for partition 6, vocabulary size: 68000[32m [repeated 3x across cluster]
+[36m(ClientAppActor pid=4089740)[39m [92mINFO [39m:      len vocab 68000[32m [repeated 3x across cluster]
+Map: 100%|██████████| 1250/1250 [00:00<00:00, 12778.35 examples/s]
+[36m(ClientAppActor pid=4089748)[39m /home/khanhsv/miniconda3/envs/FL/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=4089748) is multi-threaded, use of fork() may lead to deadlocks in the child.[32m [repeated 3x across cluster]
+[36m(ClientAppActor pid=4089748)[39m   self.pid = os.fork()[32m [repeated 3x across cluster]

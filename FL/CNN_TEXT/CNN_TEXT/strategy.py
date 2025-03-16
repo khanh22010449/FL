@@ -9,10 +9,10 @@ from CNN_TEXT.task import TextCNN, create_run_dir, set_weights
 
 from flwr.common import logger, parameters_to_ndarrays
 from flwr.common.typing import UserConfig
-from flwr.server.strategy import FedAvg
+from flwr.server.strategy import FedAvg, FedAdam, FedAdagrad, FedAvgM, FedProx
 
 
-PROJECT_NAME = "CNN for TEXT"
+PROJECT_NAME = "CNN for TEXT - FedAdam"
 
 
 class CustomFedAvg(FedAvg):

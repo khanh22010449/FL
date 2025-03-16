@@ -1,0 +1,37 @@
+/home/khanhsv/miniconda3/envs/FL/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+[92mINFO [39m:      Starting Flower ServerApp, config: num_rounds=50, no round_timeout
+[92mINFO [39m:
+[92mINFO [39m:      [INIT]
+[92mINFO [39m:      Using initial global parameters provided by strategy
+[92mINFO [39m:      Starting evaluation of initial global parameters
+/home/khanhsv/miniconda3/envs/FL/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=4139081) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+[92mINFO [39m:      💡 New best global model found: 0.498800
+[92mINFO [39m:      initial parameters (loss, other metrics): 0.7972702763642475, {'centralized_accuracy': 0.4988}
+[92mINFO [39m:
+[92mINFO [39m:      [ROUND 1]
+[92mINFO [39m:      configure_fit: strategy sampled 10 clients (out of 20)
+Validation Accuracy: 0.4988, Loss: 0.7973
+[36m(ClientAppActor pid=4140701)[39m /home/khanhsv/miniconda3/envs/FL/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+[36m(ClientAppActor pid=4140701)[39m   obj.co_lnotab,  # for < python 3.10 [not counted in args]
+[36m(ClientAppActor pid=4140701)[39m /home/khanhsv/miniconda3/envs/FL/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.
+[36m(ClientAppActor pid=4140701)[39m   obj.co_lnotab,  # for < python 3.10 [not counted in args]
+[36m(ClientAppActor pid=4140701)[39m [92mINFO [39m:      Loaded data for partition 1, vocabulary size: 68000
+[36m(ClientAppActor pid=4140701)[39m [92mINFO [39m:      len vocab 68000
+[36m(ClientAppActor pid=4140701)[39m Epoch 1/100, Loss: 0.7534
+[36m(ClientAppActor pid=4140701)[39m Epoch 2/100, Loss: 0.6947
+[36m(ClientAppActor pid=4140701)[39m Epoch 3/100, Loss: 0.6998
+Map:   0%|          | 0/1250 [00:00<?, ? examples/s]
+Map: 100%|██████████| 1250/1250 [00:00<00:00, 19764.54 examples/s]
+[36m(ClientAppActor pid=4140701)[39m /home/khanhsv/miniconda3/envs/FL/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=4140701) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[36m(ClientAppActor pid=4140701)[39m   self.pid = os.fork()
+[36m(ClientAppActor pid=4140701)[39m Epoch 20/100, Loss: 0.5441[32m [repeated 52x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)
+[36m(ClientAppActor pid=4140701)[39m Epoch 35/100, Loss: 0.4608[32m [repeated 61x across cluster]
+[36m(ClientAppActor pid=4140700)[39m Epoch 47/100, Loss: 0.4040[32m [repeated 62x across cluster]
+[36m(ClientAppActor pid=4140701)[39m Epoch 54/100, Loss: 0.3678[32m [repeated 14x across cluster]
+[36m(ClientAppActor pid=4140698)[39m /home/khanhsv/miniconda3/envs/FL/lib/python3.12/site-packages/datasets/utils/_dill.py:385: DeprecationWarning: co_lnotab is deprecated, use co_lines instead.[32m [repeated 6x across cluster]
+[36m(ClientAppActor pid=4140698)[39m   obj.co_lnotab,  # for < python 3.10 [not counted in args][32m [repeated 6x across cluster]
+[36m(ClientAppActor pid=4140698)[39m [92mINFO [39m:      Loaded data for partition 5, vocabulary size: 68000[32m [repeated 3x across cluster]
+[36m(ClientAppActor pid=4140698)[39m [92mINFO [39m:      len vocab 68000[32m [repeated 3x across cluster]
+[36m(ClientAppActor pid=4140698)[39m /home/khanhsv/miniconda3/envs/FL/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=4140698) is multi-threaded, use of fork() may lead to deadlocks in the child.[32m [repeated 3x across cluster]

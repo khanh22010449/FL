@@ -1,0 +1,14 @@
+/home/khanhsv/miniconda3/envs/FL/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py:174: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  self.FromDatetime(datetime.datetime.utcnow())
+[92mINFO [39m:      Starting Flower ServerApp, config: num_rounds=50, no round_timeout
+[92mINFO [39m:
+[92mINFO [39m:      [INIT]
+[92mINFO [39m:      Using initial global parameters provided by strategy
+[92mINFO [39m:      Starting evaluation of initial global parameters
+/home/khanhsv/miniconda3/envs/FL/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=3940356) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+Validation Accuracy: 0.4988
+[92mINFO [39m:      💡 New best global model found: 0.498800
+[92mINFO [39m:      initial parameters (loss, other metrics): 0.8395567756549568, {'centralized_accuracy': 0.4988}
+[92mINFO [39m:
+[92mINFO [39m:      [ROUND 1]

@@ -1,0 +1,1012 @@
+2025-03-12 18:12:53,909 INFO    StreamThr :2461995 [internal.py:wandb_internal():85] W&B internal server running at pid: 2461995, started at: 2025-03-12 18:12:53.908685
+2025-03-12 18:12:53,911 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status
+2025-03-12 18:12:53,912 INFO    WriterThread:2461995 [datastore.py:open_for_write():87] open: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/run-xlsh0fa4.wandb
+2025-03-12 18:12:53,912 DEBUG   SenderThread:2461995 [sender.py:send():391] send: header
+2025-03-12 18:12:53,915 DEBUG   SenderThread:2461995 [sender.py:send():391] send: run
+2025-03-12 18:12:54,763 INFO    SenderThread:2461995 [dir_watcher.py:__init__():211] watching files in: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files
+2025-03-12 18:12:54,764 INFO    SenderThread:2461995 [sender.py:_start_run_threads():1200] run started: xlsh0fa4 with start time 1741777973.909165
+2025-03-12 18:12:54,783 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: run_start
+2025-03-12 18:12:54,789 DEBUG   HandlerThread:2461995 [system_info.py:__init__():26] System info init
+2025-03-12 18:12:54,789 DEBUG   HandlerThread:2461995 [system_info.py:__init__():41] System info init done
+2025-03-12 18:12:54,789 INFO    HandlerThread:2461995 [system_monitor.py:start():194] Starting system monitor
+2025-03-12 18:12:54,790 INFO    SystemMonitor:2461995 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-03-12 18:12:54,790 INFO    HandlerThread:2461995 [system_monitor.py:probe():214] Collecting system info
+2025-03-12 18:12:54,791 INFO    SystemMonitor:2461995 [interfaces.py:start():188] Started cpu monitoring
+2025-03-12 18:12:54,791 INFO    SystemMonitor:2461995 [interfaces.py:start():188] Started disk monitoring
+2025-03-12 18:12:54,791 INFO    SystemMonitor:2461995 [interfaces.py:start():188] Started gpu monitoring
+2025-03-12 18:12:54,795 INFO    SystemMonitor:2461995 [interfaces.py:start():188] Started memory monitoring
+2025-03-12 18:12:54,798 INFO    SystemMonitor:2461995 [interfaces.py:start():188] Started network monitoring
+2025-03-12 18:12:54,807 DEBUG   HandlerThread:2461995 [system_info.py:probe():152] Probing system
+2025-03-12 18:12:54,810 DEBUG   HandlerThread:2461995 [system_info.py:_probe_git():137] Probing git
+2025-03-12 18:12:54,814 DEBUG   HandlerThread:2461995 [system_info.py:_probe_git():145] Probing git done
+2025-03-12 18:12:54,815 DEBUG   HandlerThread:2461995 [system_info.py:probe():200] Probing system done
+2025-03-12 18:12:54,815 DEBUG   HandlerThread:2461995 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-52-generic-x86_64-with-glibc2.35', 'python': '3.12.9', 'heartbeatAt': '2025-03-12T11:12:54.807807', 'startedAt': '2025-03-12T11:12:53.905332', 'docker': None, 'cuda': None, 'args': ('--app', '.', '--num-supernodes', '100', '--backend-config', '{"client-resources": {"num-cpus": 4, "num-gpus": 0.25}}'), 'state': 'running', 'program': '/home/khanhsv/miniconda3/envs/FL/bin/flower-simulation', 'codePathLocal': None, 'git': {'remote': 'https://github.com/khanh22010449/FL.git', 'commit': 'b736d88c1bed8f982fc79137793ec926ea02216d'}, 'email': None, 'root': '/home/khanhsv/FL', 'host': 'lab02-System-Product-Name', 'username': 'khanhsv', 'executable': '/home/khanhsv/miniconda3/envs/FL/bin/python', 'cpu_count': 16, 'cpu_count_logical': 24, 'cpu_freq': {'current': 4498.202833333332, 'min': 800.0, 'max': 4716.666666666667}, 'cpu_freq_per_core': [{'current': 4900.0, 'min': 800.0, 'max': 5100.0}, {'current': 4900.0, 'min': 800.0, 'max': 5100.0}, {'current': 4900.0, 'min': 800.0, 'max': 5100.0}, {'current': 4900.0, 'min': 800.0, 'max': 5100.0}, {'current': 4900.0, 'min': 800.0, 'max': 5100.0}, {'current': 4900.0, 'min': 800.0, 'max': 5100.0}, {'current': 4900.0, 'min': 800.0, 'max': 5100.0}, {'current': 4900.0, 'min': 800.0, 'max': 5100.0}, {'current': 4899.951, 'min': 800.0, 'max': 5200.0}, {'current': 4900.0, 'min': 800.0, 'max': 5200.0}, {'current': 4900.0, 'min': 800.0, 'max': 5200.0}, {'current': 4900.0, 'min': 800.0, 'max': 5200.0}, {'current': 4900.0, 'min': 800.0, 'max': 5100.0}, {'current': 4900.097, 'min': 800.0, 'max': 5100.0}, {'current': 4732.256, 'min': 800.0, 'max': 5100.0}, {'current': 4732.126, 'min': 800.0, 'max': 5100.0}, {'current': 3700.015, 'min': 800.0, 'max': 3900.0}, {'current': 3700.031, 'min': 800.0, 'max': 3900.0}, {'current': 3699.933, 'min': 800.0, 'max': 3900.0}, {'current': 3700.026, 'min': 800.0, 'max': 3900.0}, {'current': 3699.997, 'min': 800.0, 'max': 3900.0}, {'current': 3699.901, 'min': 800.0, 'max': 3900.0}, {'current': 3699.969, 'min': 800.0, 'max': 3900.0}, {'current': 3700.096, 'min': 800.0, 'max': 3900.0}], 'disk': {'/': {'total': 915.3232879638672, 'used': 799.6230812072754}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 94.10883712768555}}
+2025-03-12 18:12:54,815 INFO    HandlerThread:2461995 [system_monitor.py:probe():224] Finished collecting system info
+2025-03-12 18:12:54,815 INFO    HandlerThread:2461995 [system_monitor.py:probe():227] Publishing system info
+2025-03-12 18:12:54,815 DEBUG   HandlerThread:2461995 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2025-03-12 18:12:55,766 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_created():271] file/dir created: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/conda-environment.yaml
+2025-03-12 18:12:56,768 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/conda-environment.yaml
+2025-03-12 18:12:56,839 DEBUG   HandlerThread:2461995 [system_info.py:_save_conda():224] Saving conda packages done
+2025-03-12 18:12:56,840 INFO    HandlerThread:2461995 [system_monitor.py:probe():229] Finished publishing system info
+2025-03-12 18:12:56,845 DEBUG   SenderThread:2461995 [sender.py:send():391] send: files
+2025-03-12 18:12:56,845 INFO    SenderThread:2461995 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2025-03-12 18:12:56,911 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: python_packages
+2025-03-12 18:12:56,912 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: python_packages
+2025-03-12 18:12:56,912 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:12:56,913 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:12:56,919 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:12:57,263 DEBUG   SenderThread:2461995 [sender.py:send():391] send: telemetry
+2025-03-12 18:12:57,663 INFO    wandb-upload_0:2461995 [upload_job.py:push():130] Uploaded file /tmp/tmpbcn9a3rhwandb/r6yxabos-wandb-metadata.json
+2025-03-12 18:12:57,771 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_created():271] file/dir created: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/requirements.txt
+2025-03-12 18:12:57,771 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_created():271] file/dir created: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:12:57,771 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_created():271] file/dir created: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/wandb-metadata.json
+2025-03-12 18:12:59,267 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:12:59,775 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:13:00,463 DEBUG   SenderThread:2461995 [sender.py:send():391] send: telemetry
+2025-03-12 18:13:00,463 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: partial_history
+2025-03-12 18:13:01,772 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:13:02,772 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:13:04,914 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:13:06,914 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:13:09,914 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:13:11,916 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:13:11,919 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:13:13,780 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:13:15,256 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:13:15,781 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:13:16,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:13:19,784 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:13:20,577 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:13:25,921 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:13:26,784 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/config.yaml
+2025-03-12 18:13:26,912 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:13:26,913 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:13:26,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:13:31,193 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:13:36,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:13:36,915 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:13:41,912 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:13:41,913 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:13:42,197 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:13:46,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:13:47,915 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:13:52,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:13:53,799 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:13:54,798 DEBUG   SystemMonitor:2461995 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-03-12 18:13:54,799 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:13:54,799 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:13:55,799 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:13:56,912 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:13:56,913 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:13:56,914 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:13:57,800 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:13:58,222 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:01,804 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:02,804 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:03,361 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:03,805 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:06,914 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:14:08,915 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:11,912 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:14:11,913 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:14:14,132 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:16,914 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:14:19,920 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:24,799 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:14:25,802 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:26,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:14:26,913 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:14:26,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:14:31,179 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:36,820 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:36,990 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:14:38,822 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:39,822 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:41,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:14:41,913 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:14:42,237 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:44,824 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:45,824 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:46,941 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:14:47,825 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:47,942 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:48,826 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:51,830 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:53,830 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:14:53,942 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:14:54,800 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:14:56,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:14:56,913 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:14:56,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:14:59,130 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:04,944 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:06,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:15:09,945 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:11,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:15:11,913 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:15:15,158 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:16,942 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:15:20,944 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:22,850 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:15:23,853 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:15:24,800 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:15:26,806 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:26,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:15:26,913 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:15:26,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:15:31,942 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:33,855 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:15:34,855 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:15:36,944 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:15:36,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:41,861 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:15:41,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:15:41,914 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:15:42,156 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:42,861 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:15:46,944 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:15:47,945 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:53,945 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:15:54,802 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:15:56,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:15:56,914 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:15:56,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:15:59,219 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:04,943 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:06,872 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:06,944 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:16:07,873 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:09,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:11,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:16:11,914 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:16:15,212 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:16,944 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:16:18,881 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:19,881 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:20,570 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:22,882 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:23,882 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:24,802 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:16:25,803 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:26,913 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:16:26,915 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:16:26,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:16:28,887 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:29,886 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:30,976 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:36,947 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:16:36,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:41,914 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:16:41,914 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:16:42,219 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:46,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:16:47,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:51,900 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:52,902 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:53,902 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:16:53,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:16:54,803 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:16:56,914 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:16:56,915 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:16:56,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:16:59,171 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:03,905 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:04,592 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:04,905 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:06,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:17:08,906 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:09,907 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:10,148 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:11,916 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:17:11,916 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:17:14,912 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:15,654 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:15,912 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:16,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:17:20,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:24,804 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:17:26,806 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:26,915 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:17:26,915 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:17:26,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:17:30,925 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:31,923 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:31,926 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:36,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:17:36,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:41,944 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:17:41,944 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:17:42,171 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:42,933 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:43,933 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:46,947 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:17:47,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:51,936 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:52,936 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:52,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:17:53,937 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:17:54,804 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:17:56,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:17:56,948 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:17:56,988 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:17:58,169 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:00,939 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:01,940 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:03,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:06,947 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:18:08,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:11,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:18:11,949 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:18:14,195 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:15,950 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:16,947 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:18:16,949 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:19,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:24,805 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:18:25,805 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:26,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:18:26,946 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:18:26,948 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:18:27,953 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:28,953 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:29,953 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:31,406 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:36,948 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:18:36,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:39,956 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:40,957 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:41,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:18:41,947 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:18:41,957 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:42,218 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:46,948 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:18:47,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:47,963 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:48,963 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:18:52,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:54,808 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:18:56,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:18:56,947 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:18:56,987 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:18:58,230 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:18:59,969 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:00,972 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:03,963 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:19:06,948 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:19:09,508 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:19:10,977 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:11,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:19:11,947 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:19:11,975 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:15,243 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:19:16,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:19:20,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:19:23,979 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:24,807 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:19:24,980 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:26,808 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:19:26,947 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:19:26,948 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:19:26,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:19:30,985 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:31,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:19:31,986 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:36,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:19:36,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:19:38,988 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:39,988 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:41,947 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:19:41,948 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:19:42,249 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:19:46,953 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:19:47,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:19:49,994 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:50,994 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:51,994 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:19:53,960 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:19:54,811 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:19:56,947 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:19:56,947 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:19:56,988 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:19:59,195 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:04,964 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:06,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:20:07,002 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:08,003 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:09,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:11,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:20:11,949 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:20:15,288 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:16,009 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:16,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:20:17,009 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:18,010 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:20,964 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:24,017 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:24,808 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:20:25,018 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:26,018 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:26,809 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:26,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:20:26,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:20:26,950 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:20:31,962 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:35,022 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:36,023 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:36,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:20:36,965 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:41,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:20:41,949 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:20:42,169 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:46,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:20:47,963 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:52,969 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:20:54,809 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:20:56,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:20:56,950 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:20:56,953 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:20:57,039 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:58,043 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:20:58,153 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:03,962 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:06,044 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:06,953 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:21:07,045 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:08,045 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:09,678 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:10,046 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:11,046 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:11,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:21:11,954 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:21:15,172 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:16,953 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:21:20,347 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:21,052 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:22,053 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:24,811 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:21:25,812 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:26,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:21:26,950 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:21:26,990 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:21:31,227 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:36,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:21:36,963 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:41,949 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:21:41,950 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:21:42,260 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:45,073 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:46,074 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:46,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:21:47,964 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:53,265 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:21:54,814 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:21:55,081 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:56,081 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:56,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:21:56,950 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:21:56,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:21:57,082 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:21:59,250 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:04,964 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:06,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:22:07,088 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:22:08,088 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:22:10,964 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:11,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:22:11,950 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:22:16,273 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:16,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:22:21,964 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:24,814 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:22:26,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:22:26,952 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:22:26,991 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:22:27,192 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:33,042 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:33,096 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:22:34,097 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:22:36,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:22:38,403 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:40,099 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:22:41,100 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:22:41,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:22:41,950 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:22:42,104 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:22:44,171 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:46,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:22:49,283 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:51,111 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:22:52,111 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:22:54,114 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:22:54,815 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:22:54,816 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:22:56,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:22:56,950 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:22:56,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:22:57,311 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: partial_history
+2025-03-12 18:22:57,312 DEBUG   SenderThread:2461995 [sender.py:send():391] send: history
+2025-03-12 18:22:57,312 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: summary_record
+2025-03-12 18:22:57,313 INFO    SenderThread:2461995 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2025-03-12 18:22:58,116 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_created():271] file/dir created: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/wandb-summary.json
+2025-03-12 18:22:59,117 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:23:00,117 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:23:00,581 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:01,117 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:23:05,120 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:23:06,053 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:06,120 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:23:06,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:23:08,937 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: partial_history
+2025-03-12 18:23:10,123 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:23:11,339 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:11,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:23:11,950 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:23:12,123 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:23:16,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:23:16,976 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:21,980 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:24,818 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:23:26,954 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:23:26,957 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:23:26,991 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:23:27,181 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:32,977 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:36,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:23:38,979 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:41,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:23:41,951 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:23:44,262 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:46,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:23:49,979 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:54,826 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:23:55,147 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:23:55,838 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:23:56,147 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:23:56,950 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:23:56,951 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:23:56,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:23:58,148 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:24:00,149 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:24:01,509 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:06,955 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:24:06,978 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:11,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:24:11,951 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:24:12,165 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:16,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:24:17,983 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:23,980 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:24,820 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:24:26,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:24:26,951 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:24:26,993 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:24:29,213 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:34,984 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:36,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:24:40,341 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:41,174 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:24:41,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:24:41,951 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:24:42,174 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:24:45,386 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:46,176 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:24:46,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:24:47,176 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:24:48,177 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:24:51,266 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:54,822 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:24:56,822 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:24:56,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:24:56,951 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:24:56,993 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:25:01,981 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:25:06,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:25:06,984 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:25:11,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:25:11,951 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:25:12,199 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:25:16,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:25:17,989 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:25:23,982 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:25:24,823 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:25:26,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:25:26,951 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:25:26,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:25:27,198 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:25:28,199 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:25:29,127 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:25:30,199 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:25:34,986 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:25:36,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:25:37,205 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:25:38,207 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:25:40,986 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:25:41,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:25:41,951 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:25:46,160 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:25:46,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:25:51,986 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:25:54,824 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:25:56,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:25:56,952 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:25:56,992 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:25:57,238 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:02,988 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:06,959 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:26:08,987 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:11,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:26:11,952 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:26:14,225 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:26:14,786 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:15,226 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:26:16,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:26:18,227 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:26:19,982 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:20,228 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:26:24,825 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:26:25,001 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:26,232 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:26:26,951 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:26:26,952 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:26:26,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:26:27,233 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:26:28,233 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:26:30,202 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:35,990 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:36,960 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:26:40,987 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:41,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:26:41,952 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:26:46,258 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:46,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:26:51,987 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:54,852 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:26:56,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:26:56,952 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:26:56,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:26:57,245 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:26:57,257 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:26:58,245 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:27:02,247 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:27:02,988 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:27:06,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:27:08,987 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:27:10,258 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:27:11,255 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:27:11,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:27:11,954 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:27:12,256 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:27:14,211 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:27:14,256 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:27:16,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:27:19,991 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:27:24,826 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:27:25,826 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:27:26,953 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:27:26,953 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:27:26,992 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:27:31,235 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:27:36,958 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:27:36,989 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:27:41,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:27:41,957 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:27:42,195 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:27:43,275 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:27:44,275 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:27:46,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:27:47,989 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:27:48,281 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:27:52,990 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:27:54,827 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:27:56,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:27:56,952 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:27:56,994 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:27:58,183 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:00,288 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:01,288 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:02,290 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:03,515 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:04,291 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:06,959 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:28:08,992 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:11,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:28:11,952 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:28:14,179 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:16,958 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:28:19,990 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:24,828 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:28:25,829 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:26,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:28:26,952 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:28:26,994 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:28:31,310 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:31,737 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:32,312 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:36,313 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:36,958 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:28:36,990 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:41,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:28:41,953 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:28:42,252 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:46,960 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:28:47,946 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:49,319 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:50,319 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:52,997 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:28:54,829 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:28:55,324 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:56,325 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:28:56,952 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:28:56,953 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:28:56,959 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:28:58,206 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:03,998 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:06,959 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:29:09,996 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:11,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:29:11,956 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:29:15,249 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:16,959 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:29:18,332 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:29:19,332 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:29:20,485 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:22,334 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:29:24,832 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:29:25,832 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:26,956 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:29:26,956 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:29:26,998 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:29:31,261 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:36,959 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:29:36,981 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:38,341 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:29:39,341 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:29:41,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:29:41,957 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:29:42,211 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:44,346 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:29:45,346 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:29:46,962 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:29:48,003 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:54,000 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:29:54,831 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:29:56,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:29:56,957 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:29:56,998 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:29:59,266 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:00,354 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:01,355 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:02,355 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:04,355 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:04,405 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:06,960 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:30:10,005 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:11,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:30:11,957 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:30:15,270 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:16,960 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:30:21,001 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:22,369 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:23,370 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:24,370 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:24,831 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:30:26,832 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:26,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:30:26,957 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:30:26,960 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:30:28,371 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:29,375 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:32,001 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:36,960 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:30:37,002 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:41,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:30:41,957 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:30:42,241 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:43,379 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:44,380 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:46,960 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:30:47,906 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:49,381 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:50,385 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:30:53,004 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:30:54,832 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:30:56,957 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:30:56,957 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:30:56,999 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:30:58,187 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:04,002 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:06,960 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:31:08,393 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:09,081 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:09,396 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:11,960 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:31:11,960 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:31:12,402 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:14,203 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:16,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:31:20,006 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:22,405 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:23,408 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:24,835 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:31:25,338 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:26,409 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:26,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:31:26,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:31:26,962 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:31:28,410 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:31,243 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:36,964 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:31:37,011 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:41,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:31:41,961 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:31:42,231 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:44,420 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:45,421 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:46,966 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:31:48,007 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:50,425 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:51,431 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:54,006 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:31:54,835 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:31:56,432 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:56,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:31:56,962 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:31:56,967 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:31:57,433 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:58,433 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:31:59,235 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:02,434 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:05,008 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:06,968 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:32:11,008 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:11,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:32:11,961 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:32:16,183 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:16,971 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:32:21,444 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:22,007 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:22,445 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:24,834 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:32:26,447 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:26,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:32:26,962 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:32:26,971 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:32:27,229 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:29,447 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:30,448 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:32,452 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:33,008 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:36,971 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:32:37,247 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: partial_history
+2025-03-12 18:32:37,247 DEBUG   SenderThread:2461995 [sender.py:send():391] send: history
+2025-03-12 18:32:37,248 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: summary_record
+2025-03-12 18:32:37,248 INFO    SenderThread:2461995 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2025-03-12 18:32:37,454 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/wandb-summary.json
+2025-03-12 18:32:38,114 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:38,454 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:39,454 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:40,457 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:41,961 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:32:41,962 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:32:43,360 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:44,456 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:45,456 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:46,795 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: partial_history
+2025-03-12 18:32:47,032 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:32:48,460 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:32:49,040 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:54,834 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:32:54,836 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:32:56,962 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:32:56,964 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:32:57,002 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:33:00,260 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:06,043 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:06,991 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:33:11,962 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:33:11,962 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:33:12,265 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:16,993 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:33:18,044 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:22,476 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:33:23,476 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:33:23,478 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:24,476 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:33:24,835 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:33:26,477 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:33:26,962 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:33:26,962 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:33:26,992 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:33:29,256 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:35,046 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:36,991 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:33:41,041 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:41,965 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:33:41,965 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:33:46,185 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:46,991 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:33:52,046 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:54,838 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:33:56,965 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:33:56,965 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:33:57,006 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:33:57,191 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:33:58,492 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:33:59,492 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:34:00,493 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:34:02,493 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:34:03,047 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:34:06,991 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:34:09,042 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:34:11,964 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:34:11,965 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:34:14,257 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:34:16,994 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:34:20,047 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:34:24,839 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:34:25,839 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:34:26,968 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:34:26,968 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:34:27,009 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:34:31,188 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:34:33,511 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:34:34,511 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:34:36,994 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:34:36,997 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:34:39,513 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:34:40,513 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:34:41,968 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:34:41,968 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:34:42,259 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:34:46,994 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:34:48,044 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:34:53,047 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:34:54,836 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:34:56,971 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:34:56,971 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:34:57,010 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:34:58,202 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:04,049 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:07,000 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:35:08,529 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:35:09,091 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:09,529 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:35:11,971 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:35:11,971 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:35:14,263 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:15,531 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:35:16,533 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:35:17,000 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:35:20,047 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:24,837 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:35:25,838 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:26,972 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:35:26,977 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:35:27,013 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:35:31,244 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:37,000 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:35:37,047 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:41,971 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:35:41,971 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:35:42,243 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:43,542 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:35:44,542 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:35:47,000 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:35:48,048 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:53,548 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:35:54,048 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:35:54,548 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:35:54,841 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:35:56,976 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:35:56,976 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:35:57,015 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:35:59,283 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:05,050 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:07,000 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:36:10,052 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:11,975 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:36:11,975 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:36:15,212 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:17,000 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:36:17,559 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:36:18,559 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:36:21,048 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:24,839 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:36:26,839 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:26,975 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:36:26,975 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:36:27,016 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:36:29,564 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:36:30,564 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:36:32,054 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:32,570 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:36:37,001 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:36:38,049 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:41,975 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:36:41,975 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:36:43,265 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:47,001 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:36:49,049 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:53,586 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:36:54,200 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:36:54,585 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:36:54,839 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:36:56,978 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:36:56,978 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:36:57,001 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:36:59,283 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:04,465 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:05,588 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:37:06,588 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:37:07,001 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:37:08,590 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:37:10,053 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:11,978 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:37:11,980 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:37:15,195 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:17,002 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:37:21,056 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:24,840 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:37:26,732 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:26,978 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:37:26,978 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:37:27,001 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:37:28,599 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:37:29,599 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:37:32,057 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:37,002 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:37:37,060 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:41,978 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:37:41,978 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:37:42,226 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:42,607 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:37:43,608 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:37:44,608 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:37:47,002 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:37:48,059 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:53,059 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:37:54,844 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:37:56,979 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:37:56,980 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:37:57,020 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:37:58,224 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:00,626 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:01,627 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:04,058 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:07,006 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:38:10,058 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:11,979 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:38:11,980 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:38:13,631 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:14,633 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:15,635 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:17,004 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:38:21,067 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:24,843 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:38:26,845 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:26,979 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:38:26,980 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:38:27,021 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:38:31,644 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:32,000 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:32,644 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:37,004 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:38:37,060 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:41,979 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: stop_status
+2025-03-12 18:38:41,980 DEBUG   SenderThread:2461995 [sender.py:send_request():418] send_request: stop_status
+2025-03-12 18:38:42,255 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:47,005 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: internal_messages
+2025-03-12 18:38:47,651 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:47,795 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:48,650 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:50,651 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:53,060 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:54,847 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:38:57,304 INFO    memory    :2461995 [interfaces.py:monitor():138] Process proc.memory.rssMB has exited.
+2025-03-12 18:38:57,304 DEBUG   SystemMonitor:2461995 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-03-12 18:38:57,304 DEBUG   SystemMonitor:2461995 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-03-12 18:38:57,306 DEBUG   SenderThread:2461995 [sender.py:send():391] send: stats
+2025-03-12 18:38:57,656 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:58,306 DEBUG   HandlerThread:2461995 [handler.py:handle_request():158] handle_request: status_report
+2025-03-12 18:38:58,656 INFO    Thread-12 :2461995 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/khanhsv/FL/FL/CNN_TEXT/wandb/run-20250312_181253-xlsh0fa4/files/output.log
+2025-03-12 18:38:59,371 INFO    MainThread:2461995 [internal.py:handle_exit():75] Internal process exited
