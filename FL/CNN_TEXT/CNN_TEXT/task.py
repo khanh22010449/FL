@@ -81,14 +81,14 @@ def load_data(partition_id: int, num_partitions: int, vocab_size: int, max_lengt
 
     # Create DataLoaderArray
     trainloader = DataLoader(
-        partition_train_test["train"], batch_size=32, shuffle=True, num_workers=8
+        partition_train_test["train"], batch_size=32, shuffle=True
     )
     # for batch in trainloader:
     #     log(INFO, f"KEYS : {batch.keys()}")
     log(INFO, f"task.py")
     log(INFO, f"len vocab {len(vocab)}")
 
-    valloader = DataLoader(partition_train_test["test"], batch_size=32, num_workers=8)
+    valloader = DataLoader(partition_train_test["test"], batch_size=32)
     # print(f"len vocab : {len(vocab)}")
     return trainloader, valloader, len(vocab)
 

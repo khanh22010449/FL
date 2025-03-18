@@ -1,0 +1,172 @@
+{
+    "os": "Linux-6.8.0-52-generic-x86_64-with-glibc2.35",
+    "python": "3.12.9",
+    "heartbeatAt": "2025-03-18T11:11:23.085882",
+    "startedAt": "2025-03-18T11:11:22.465511",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--app",
+        ".",
+        "--num-supernodes",
+        "100"
+    ],
+    "state": "running",
+    "program": "/home/khanhsv/miniconda3/envs/FL/bin/flower-simulation",
+    "codePathLocal": null,
+    "git": {
+        "remote": null,
+        "commit": null
+    },
+    "email": "22010449@st.phenikaa-uni.edu.vn",
+    "root": "/home/khanhsv/FL/FL",
+    "host": "lab02-System-Product-Name",
+    "username": "khanhsv",
+    "executable": "/home/khanhsv/miniconda3/envs/FL/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 851.4252916666668,
+        "min": 800.0,
+        "max": 4716.666666666667
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2456.52,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.947,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 801.818,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 828.036,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1314.401,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.12,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 2590.158,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 2595.437,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 2090.28,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 2668.407,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 2047.747,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1669.479,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1048.879,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 870.654,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1984.413,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.172,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 799.87,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1453.953,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 801.083,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1400.415,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1595.856,
+            "min": 800.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 915.3232879638672,
+            "used": 821.934009552002
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 94.10883712768555
+    }
+}

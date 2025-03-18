@@ -1,0 +1,1 @@
+{"num-server-rounds": 10, "fraction-fit": 0.5, "local-epochs": 50, "server-device": "cpu", "use-wandb": true}

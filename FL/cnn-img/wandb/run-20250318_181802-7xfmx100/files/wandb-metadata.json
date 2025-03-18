@@ -1,0 +1,174 @@
+{
+    "os": "Linux-6.8.0-52-generic-x86_64-with-glibc2.35",
+    "python": "3.12.9",
+    "heartbeatAt": "2025-03-18T11:18:03.321736",
+    "startedAt": "2025-03-18T11:18:02.736165",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--app",
+        ".",
+        "--num-supernodes",
+        "50",
+        "--backend-config",
+        "{\"client-resources\": {\"num-cpus\": 4, \"num-gpus\": 0.25}}"
+    ],
+    "state": "running",
+    "program": "/home/khanhsv/miniconda3/envs/FL/bin/flower-simulation",
+    "codePathLocal": null,
+    "git": {
+        "remote": null,
+        "commit": null
+    },
+    "email": "22010449@st.phenikaa-uni.edu.vn",
+    "root": "/home/khanhsv/FL/FL",
+    "host": "lab02-System-Product-Name",
+    "username": "khanhsv",
+    "executable": "/home/khanhsv/miniconda3/envs/FL/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 1430.3005000000003,
+        "min": 800.0,
+        "max": 4716.666666666667
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1025.873,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 971.947,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 859.814,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1946.836,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1725.963,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3776.259,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1869.582,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 4000.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3999.948,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 1250.291,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 2421.582,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3923.973,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1366.772,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 4000.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 996.508,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1107.891,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1141.535,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1173.417,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 802.924,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 802.429,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2589.599,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 1323.636,
+            "min": 800.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 915.3232879638672,
+            "used": 821.9478569030762
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 94.10883712768555
+    }
+}
